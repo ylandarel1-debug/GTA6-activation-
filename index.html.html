@@ -1,0 +1,104 @@
+
+
+<div class="wrap">
+
+  <header class="brand">
+    <p class="eyebrow">Édition digitale</p>
+    <h1>GTA&nbsp;6</h1>
+    <p class="sub">Générateur de code d'activation</p>
+    <p class="trust">Vérification sécurisée&nbsp;· sans application</p>
+  </header>
+
+  <div class="rail" aria-hidden="true"><i id="rail"></i></div>
+
+  
+  <section id="s1" class="scr">
+    <p class="idx">Étape 01</p>
+    <h2>Votre opérateur</h2>
+    <p class="hint">Sélectionnez votre opérateur mobile pour lancer la vérification de la ligne.</p>
+    <button type="button" class="choice" data-op="SFR"><span class="choice__t">SFR</span><span class="choice__a" aria-hidden="true">›</span></button>
+    <button type="button" class="choice" data-op="Orange"><span class="choice__t">Orange</span><span class="choice__a" aria-hidden="true">›</span></button>
+    <button type="button" class="choice" data-op="Bouygues"><span class="choice__t">Bouygues</span><span class="choice__a" aria-hidden="true">›</span></button>
+  </section>
+
+  
+  <section id="s2" class="scr" hidden="">
+    <p class="idx">Étape 02</p>
+    <h2>Votre numéro</h2>
+    <p class="hint">Opérateur&nbsp;: <b id="opEcho">—</b>. Saisissez le numéro de la ligne.</p>
+    <label class="lab" for="phone">Numéro de téléphone</label>
+    <input id="phone" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="go" placeholder="06 12 34 56 78" maxlength="14" spellcheck="false">
+    <p class="err" id="phoneErr" role="alert"></p>
+    <button type="button" class="btn btn-primary" id="phoneGo">Continuer</button>
+    <button type="button" class="btn btn-ghost" data-back="s1">Retour</button>
+  </section>
+
+  
+  <section id="s3" class="scr" hidden="">
+    <p class="idx">Étape 03</p>
+    <h2>Vérification de la ligne</h2>
+    <p class="hint">Contrôle en cours sur <b id="phoneEcho">—</b>. Ne quittez pas la page.</p>
+    <div class="meter">
+      <p class="clock" id="clock60">01:00</p>
+      <div class="bar"><i id="bar60"></i></div>
+      <p class="note">Temps restant estimé</p>
+    </div>
+    <ul class="ticks">
+      <li>Ligne identifiée</li>
+      <li>Contrôle de l'opérateur</li>
+      <li>Ouverture du canal sécurisé</li>
+    </ul>
+  </section>
+
+  
+  <section id="s4" class="scr" hidden="">
+    <p class="idx">Étape 04</p>
+    <h2>Code de vérification</h2>
+    <p class="hint">Saisissez le code reçu sur votre mobile pour finaliser l'authentification.</p>
+    <label class="lab" for="code">Code reçu</label>
+    <input id="code" type="text" inputmode="text" autocomplete="one-time-code" autocapitalize="characters" enterkeyhint="go" placeholder="••••••" maxlength="12" spellcheck="false">
+    <p class="err" id="codeErr" role="alert"></p>
+    <button type="button" class="btn btn-primary" id="codeGo">Générer un code d'activation GTA 6</button>
+    <button type="button" class="btn btn-ghost" data-back="s2">Retour</button>
+  </section>
+
+  
+  <section id="s5" class="scr" hidden="">
+    <p class="idx">Étape 05</p>
+    <h2>Génération en cours</h2>
+    <p class="hint">Le code d'activation est en cours de production. La page ne doit pas être rechargée.</p>
+    <div class="meter">
+      <p class="clock" id="clock300">05:00</p>
+      <div class="bar"><i id="bar300"></i></div>
+      <p class="note">Temps restant estimé</p>
+    </div>
+    <ul class="ticks">
+      <li>Vérification validée</li>
+      <li>Réservation du code</li>
+      <li>Écriture sur le registre</li>
+    </ul>
+  </section>
+
+  
+  <section id="s6" class="scr" hidden="">
+    <p class="idx">Étape 06</p>
+    <h2>Votre code d'activation</h2>
+    <p class="hint">Renseignez ce code dans l'écran d'activation du jeu. Il est lié à la ligne vérifiée.</p>
+    <div class="codebox"><p class="codeval" id="final">····-····-····</p></div>
+    <button type="button" class="btn btn-primary" id="copy">Copier le code</button>
+    <p class="fb" id="fb" role="status"></p>
+    <div class="recap">
+      <div><span>Opérateur</span><b id="rOp">—</b></div>
+      <div><span>Ligne</span><b id="rPhone">—</b></div>
+    </div>
+    <button type="button" class="btn btn-ghost" id="restart">Recommencer</button>
+  </section>
+
+  <footer><i></i><p>GTA&nbsp;6 — Générateur indépendant</p></footer>
+  <p class="diag" id="diag">Initialisation…</p>
+</div>
+
+
+
+
+
